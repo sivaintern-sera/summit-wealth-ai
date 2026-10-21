@@ -58,7 +58,7 @@ export function Footer({ onNavigate }) {
                 <div className="w-4 h-4 rounded-xs bg-[#050B18]" />
               </div>
               <span className="text-xl font-bold tracking-tight text-white flex items-center gap-1.5">
-                Summit <span className="font-serif italic font-normal text-[#E8B4A0]">Wealth</span>
+                StRyKr <span className="font-serif italic font-normal text-[#E8B4A0]">Ai</span>
               </span>
             </button>
             <p className="text-xs text-slate-400 font-light max-w-md leading-relaxed">
@@ -103,7 +103,7 @@ export function Footer({ onNavigate }) {
             <a href="#" className="text-slate-400 hover:text-white transition-colors">Terms</a>
           </div>
           <div className="text-xs font-mono text-slate-500">
-            © {new Date().getFullYear()} Summit Wealth AI Inc. All rights reserved.
+            © {new Date().getFullYear()} StRyKr Ai Inc. All rights reserved.
           </div>
         </div>
 
