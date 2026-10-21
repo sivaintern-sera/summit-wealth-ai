@@ -1,6 +1,6 @@
 # Summit Wealth AI — The $15 Trillion AI Economic Shift
 
-🌐 **Live Site**: [www.stemedai.com](https://www.stemedai.com)
+🌐 **Live Site**: [www.strykrai.com](https://www.strykrai.com)
 
 > A high-impact, data-driven platform exploring the $15 Trillion AI economic transformation — built for Summit Wealth's institutional intelligence initiative.
 
@@ -8,7 +8,7 @@
 
 ## 🚀 Preview
 
-[![Live Preview](https://img.shields.io/badge/Live%20Site-stemedai.com-blue?style=for-the-badge&logo=vercel)](https://www.stemedai.com)
+[![Live Preview](https://img.shields.io/badge/Live%20Site-strykrai.com-blue?style=for-the-badge&logo=vercel)](https://www.strykrai.com)
 
 ---
 
@@ -83,7 +83,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 This project is deployed on **Vercel** with a custom domain.
 
-- **Production URL**: [https://www.stemedai.com](https://www.stemedai.com)
+- **Production URL**: [https://www.strykrai.com](https://www.strykrai.com)
 - **Vercel URL**: [summit-wealth-site.vercel.app](https://summit-wealth-site.vercel.app)
 
 To deploy updates, push to the `master` branch and Vercel will auto-deploy.
