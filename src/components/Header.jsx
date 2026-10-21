@@ -43,7 +43,7 @@ export default function Header({ page, onNavigate }) {
               <div className="w-4 h-4 rounded-xs bg-[#050B18]" />
             </div>
             <span className="text-xl font-bold tracking-tight text-white flex items-center gap-1.5">
-              <span className="text-[#E8B4A0]">S</span><span className="font-serif italic font-normal">t</span><span className="text-[#E8B4A0]">R</span><span className="font-serif italic font-normal">y</span><span className="text-[#E8B4A0]">K</span><span className="font-serif italic font-normal">r</span> <span className="font-serif italic font-normal text-[#E8B4A0]">Ai</span>
+              <span><span className="text-[#E8B4A0]">S</span><span className="font-serif italic font-normal">t</span><span className="text-[#E8B4A0]">R</span><span className="font-serif italic font-normal">y</span><span className="text-[#E8B4A0]">K</span><span className="font-serif italic font-normal">r</span></span> <span className="font-serif italic font-normal text-[#E8B4A0]">Ai</span>
             </span>
           </button>
 
