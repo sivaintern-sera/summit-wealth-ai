@@ -18,7 +18,7 @@ const PRINCIPLES = [
 ]
 
 const PHASES = [
-  { num: '01', title: 'Discover', desc: 'Map the workflow, systems, data, people, exceptions, risks, and current cost.', gate: 'Is the problem material, measurable, and suitable for Summit?' },
+  { num: '01', title: 'Discover', desc: 'Map the workflow, systems, data, people, exceptions, risks, and current cost.', gate: 'Is the problem material, measurable, and suitable for StRyKr Ai?' },
   { num: '02', title: 'Design', desc: 'Future workflow, architecture, ownership, controls, integration, and measurement method.', gate: 'Does expected value justify the cost, effort, and risk?' },
   { num: '03', title: 'Deploy', desc: 'One bounded release against real cases, with named reviewers, monitoring, and rollback.', gate: 'Is performance reliable enough to remain live or expand?' },
   { num: '04', title: 'Measure', desc: 'Compare with the agreed baseline: value, quality, adoption, exception rates, and risk.', gate: 'Scale, revise, transfer, or stop?' },
@@ -43,7 +43,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
               <div className="text-[11px] font-mono tracking-widest uppercase text-[#E8B4A0] mb-4">
-                About Summit Wealth
+                About StRyKr Ai
               </div>
               <h1 className="text-4xl sm:text-5xl font-normal text-white tracking-tight leading-tight mb-6">
                 Senior by design.
@@ -51,7 +51,7 @@ export default function AboutPage() {
                 <em className="font-serif italic text-[#E8B4A0]">Specialist</em> by need.
               </h1>
               <p className="text-slate-300 text-sm font-light leading-relaxed mb-4">
-                Summit removes the operational constraints that block growth — broken workflows, preventable revenue loss, and shortages of workforce capacity — and builds measurable systems to address them.
+                StRyKr Ai removes the operational constraints that block growth — broken workflows, preventable revenue loss, and shortages of workforce capacity — and builds measurable systems to address them.
               </p>
               <p className="text-slate-300 text-sm font-light leading-relaxed">
                 Engagements are led by the principals accountable for the recommendation. Where the work requires engineering, education, healthcare, economic analysis, legal, immigration, securities, credentialing, or community expertise, the relevant specialist is identified before the engagement begins.
@@ -103,7 +103,7 @@ export default function AboutPage() {
             From constraint to controlled result.
           </h2>
           <p className="text-slate-400 text-sm font-light mb-10 max-w-2xl leading-relaxed">
-            Each phase produces a decision-ready artifact. A decision gate is not a delay — it is how Summit prevents an uncertain pilot from becoming an expensive operating dependency.
+            Each phase produces a decision-ready artifact. A decision gate is not a delay — it is how StRyKr Ai prevents an uncertain pilot from becoming an expensive operating dependency.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -155,7 +155,7 @@ export default function AboutPage() {
           </div>
 
           <p className="text-[11px] text-slate-500 font-light leading-relaxed max-w-3xl">
-            Names, roles, credentials, licenses, partnerships, client references, and collaborator relationships appear publicly only after confirmation. Summit's AI governance method is aligned to — not certified by —{' '}
+            Names, roles, credentials, licenses, partnerships, client references, and collaborator relationships appear publicly only after confirmation. StRyKr Ai's AI governance method is aligned to — not certified by —{' '}
             <a
               href="https://www.nist.gov/itl/ai-risk-management-framework"
               target="_blank"

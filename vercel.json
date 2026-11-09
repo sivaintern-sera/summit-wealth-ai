@@ -1,3 +1,9 @@
 {
-  "name": "summit-wealth-site"
+  "name": "summit-wealth-site",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/connect", "destination": "/connect.html" },
+    { "source": "/scan", "destination": "/scan.html" },
+    { "source": "/qr", "destination": "/qr.html" }
+  ]
 }

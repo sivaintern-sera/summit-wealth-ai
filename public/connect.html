@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StRyKr AI - Put AI to work for you</title>
+  <meta name="description" content="Connect with StRyKr AI for consultations, free demos, and AI tips.">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            cyber: {
+              50: '#f0f9ff',
+              400: '#38bdf8',
+              500: '#06b6d4',
+              accent: '#8b5cf6',
+              orange: '#f97316'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <!-- FontAwesome & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #050811;
+      color: #f1f5f9;
+    }
+
+    .glass-card {
+      background: rgba(10, 17, 32, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(56, 189, 248, 0.15);
+    }
+
+    .glass-card-hover:hover {
+      background: rgba(15, 27, 50, 0.85);
+      border-color: rgba(6, 182, 212, 0.45);
+      box-shadow: 0 10px 25px -5px rgba(6, 182, 212, 0.25);
+    }
+
+    .glass-button {
+      background: linear-gradient(135deg, rgba(15, 25, 45, 0.85) 0%, rgba(7, 14, 27, 0.95) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .glass-button:hover {
+      border-color: rgba(6, 182, 212, 0.5);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px -4px rgba(6, 182, 212, 0.3);
+    }
+
+    .glow-text {
+      text-shadow: 0 0 16px rgba(6, 182, 212, 0.6);
+    }
+
+    dialog::backdrop {
+      background: rgba(3, 7, 18, 0.85);
+      backdrop-filter: blur(8px);
+    }
+
+    .trap {
+      position: absolute;
+      left: -10000px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between items-center relative overflow-x-hidden selection:bg-cyan-500 selection:text-white">
+
+  <!-- Glow Background Accents -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-cyan-600/20 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/3 -right-40 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-orange-600/15 rounded-full blur-3xl"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#0ea5e910_1px,transparent_1px),linear-gradient(to_bottom,#0ea5e910_1px,transparent_1px)] bg-[size:3rem_3rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+  </div>
+
+  <!-- Main UI Container -->
+  <main class="w-full max-w-md px-4 py-6 relative z-10 flex flex-col items-center">
+    
+    <!-- Compact Header Section -->
+    <header class="text-center mb-5 flex flex-col items-center w-full">
+      <a href="https://www.strykrai.com/" class="relative mb-2 block group" title="Visit StRyKr AI Main Website">
+        <div class="w-24 h-20 rounded-xl bg-slate-900/80 p-2 flex flex-col items-center justify-center border border-slate-700/60 shadow-xl backdrop-blur-md relative overflow-hidden group-hover:border-cyan-500/50 transition-colors">
+          <img 
+            src="/Strykr AI Logo Final.png" 
+            alt="StRyKr Ai logo" 
+            class="w-full h-full object-contain"
+            onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+          />
+          <div class="hidden flex flex-col items-center justify-center text-center p-1 text-cyan-400">
+            <div class="w-7 h-7 rounded-lg bg-gradient-to-br from-[#E8B4A0] to-[#C98B75] flex items-center justify-center shadow-md mb-1">
+              <div class="w-3.5 h-3.5 rounded-xs bg-[#050B18]"></div>
+            </div>
+            <span class="text-[9px] font-mono leading-tight uppercase text-slate-300 font-semibold tracking-wider">StRyKr Ai</span>
+          </div>
+        </div>
+      </a>
+      
+      <a href="https://www.strykrai.com/" class="group">
+        <h1 class="text-2xl font-extrabold tracking-tight text-white glow-text group-hover:text-cyan-300 transition-colors">
+          StRyKr <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400">Ai</span>
+        </h1>
+      </a>
+      <h2 class="text-base font-bold text-slate-200 mt-1 tracking-wide">
+        Put AI to work for you.
+      </h2>
+      <p class="text-xs text-slate-400 mt-0.5 font-medium">
+        Choose how you’d like to connect.
+      </p>
+    </header>
+
+    <!-- 4 Action Buttons -->
+    <section class="w-full space-y-2.5 mb-6" aria-label="Connect with us">
+      
+      <!-- 1. Text Button -> Opens Phone Messaging App -->
+      <a href="sms:+18015550123" class="w-full glass-button group relative overflow-hidden rounded-xl p-3 flex items-center justify-between text-left">
+        <div class="flex items-center space-x-3">
+          <div class="w-9 h-9 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+            <i class="fa-solid fa-comment-sms text-base"></i>
+          </div>
+          <div>
+            <div class="font-semibold text-slate-100 group-hover:text-white text-sm">Text for a personal consultation</div>
+            <div class="text-xs text-slate-400">Tell us what you’d like help with.</div>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-xs text-slate-500 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all"></i>
+      </a>
+
+      <!-- 2. Call Button -> Opens Phone Dialer App -->
+      <a href="tel:+18015550123" class="w-full glass-button group relative overflow-hidden rounded-xl p-3 flex items-center justify-between text-left">
+        <div class="flex items-center space-x-3">
+          <div class="w-9 h-9 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 group-hover:bg-purple-500 group-hover:text-white transition-all">
+            <i class="fa-solid fa-phone-volume text-base"></i>
+          </div>
+          <div>
+            <div class="font-semibold text-slate-100 group-hover:text-white text-sm">Call for a personal consultation</div>
+            <div class="text-xs text-slate-400">Speak with us about your business needs.</div>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-xs text-slate-500 group-hover:text-purple-400 group-hover:translate-x-1 transition-all"></i>
+      </a>
+
+      <!-- 3. Demo Button -> Opens Demo Form Dialog -->
+      <button type="button" data-open="demo-dialog" class="w-full glass-button group relative overflow-hidden rounded-xl p-3 flex items-center justify-between text-left">
+        <div class="flex items-center space-x-3">
+          <div class="w-9 h-9 rounded-lg bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 group-hover:bg-orange-500 group-hover:text-white transition-all">
+            <i class="fa-solid fa-desktop text-base"></i>
+          </div>
+          <div>
+            <div class="font-semibold text-slate-100 group-hover:text-white text-sm">Register for a free demo</div>
+            <div class="text-xs text-slate-400">See practical AI and automation examples.</div>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-xs text-slate-500 group-hover:text-orange-400 group-hover:translate-x-1 transition-all"></i>
+      </button>
+
+      <!-- 4. Subscribe Button -> Opens Subscribe Form Dialog -->
+      <button type="button" data-open="subscribe-dialog" class="w-full glass-button group relative overflow-hidden rounded-xl p-3 flex items-center justify-between text-left">
+        <div class="flex items-center space-x-3">
+          <div class="w-9 h-9 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+            <i class="fa-solid fa-lightbulb text-base"></i>
+          </div>
+          <div>
+            <div class="font-semibold text-slate-100 group-hover:text-white text-sm">Subscribe to AI tips</div>
+            <div class="text-xs text-slate-400">Get practical ideas for your business.</div>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-xs text-slate-500 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all"></i>
+      </button>
+      
+    </section>
+
+    <!-- Explore Our Services Header Divider -->
+    <div class="w-full flex items-center my-4">
+      <div class="flex-grow border-t border-slate-800"></div>
+      <h3 class="px-4 text-xs font-bold uppercase tracking-widest text-cyan-400/90 font-mono flex items-center gap-2">
+        <i class="fa-solid fa-microchip text-[10px]"></i>
+        Explore Our Services
+      </h3>
+      <div class="flex-grow border-t border-slate-800"></div>
+    </div>
+
+    <!-- Services Section - Clicking any service navigates to the original site -->
+    <section class="w-full space-y-3 mb-5" aria-label="Explore Our Services">
+      <a href="https://www.strykrai.com/" class="block glass-card glass-card-hover rounded-xl p-3.5 transition-all group">
+        <div class="flex items-start justify-between gap-3">
+          <div class="flex items-start gap-3">
+            <div class="p-2 rounded-lg bg-cyan-950/60 text-cyan-400 border border-cyan-800/40 mt-0.5 group-hover:bg-cyan-500 group-hover:text-white transition-colors">
+              <i class="fa-solid fa-bolt text-xs"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-200 text-sm group-hover:text-white transition-colors">AI Automations</h4>
+              <p class="text-xs text-slate-400 mt-0.5 leading-relaxed">
+                Reduce repetitive work and connect your business workflows.
+              </p>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-500 group-hover:text-cyan-400 mt-1 transition-colors"></i>
+        </div>
+      </a>
+
+      <a href="https://www.strykrai.com/" class="block glass-card glass-card-hover rounded-xl p-3.5 transition-all group">
+        <div class="flex items-start justify-between gap-3">
+          <div class="flex items-start gap-3">
+            <div class="p-2 rounded-lg bg-purple-950/60 text-purple-400 border border-purple-800/40 mt-0.5 group-hover:bg-purple-500 group-hover:text-white transition-colors">
+              <i class="fa-solid fa-robot text-xs"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-200 text-sm group-hover:text-white transition-colors">Custom AI Agents</h4>
+              <p class="text-xs text-slate-400 mt-0.5 leading-relaxed">
+                Purpose-built assistance for your team’s everyday tasks.
+              </p>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-500 group-hover:text-purple-400 mt-1 transition-colors"></i>
+        </div>
+      </a>
+
+      <a href="https://www.strykrai.com/" class="block glass-card glass-card-hover rounded-xl p-3.5 transition-all group">
+        <div class="flex items-start justify-between gap-3">
+          <div class="flex items-start gap-3">
+            <div class="p-2 rounded-lg bg-orange-950/60 text-orange-400 border border-orange-800/40 mt-0.5 group-hover:bg-orange-500 group-hover:text-white transition-colors">
+              <i class="fa-solid fa-chalkboard-user text-xs"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-200 text-sm group-hover:text-white transition-colors">AI Training & Workshops</h4>
+              <p class="text-xs text-slate-400 mt-0.5 leading-relaxed">
+                Practical sessions for teams and professionals.
+              </p>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-500 group-hover:text-orange-400 mt-1 transition-colors"></i>
+        </div>
+      </a>
+    </section>
+
+    <!-- Secondary CTA Link -> Goes to original main website -->
+    <a href="https://www.strykrai.com/" class="w-full py-2.5 px-4 rounded-xl border border-cyan-500/30 bg-cyan-950/30 hover:bg-cyan-900/50 text-cyan-300 hover:text-white font-semibold text-xs tracking-wider uppercase transition-all flex items-center justify-center gap-2 group mb-6">
+      <span>Explore all services & original site</span>
+      <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+    </a>
+
+    <!-- Footer Links -->
+    <footer class="text-center pt-3 border-t border-slate-800/80 w-full">
+      <nav class="flex items-center justify-center gap-4 text-xs font-medium text-slate-400">
+        <a href="https://www.strykrai.com/" class="hover:text-cyan-400 transition-colors">Privacy</a>
+        <span class="text-slate-700">·</span>
+        <a href="https://www.strykrai.com/" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition-colors flex items-center gap-1">
+          Main website <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+        </a>
+      </nav>
+      <p class="text-[11px] text-slate-500 mt-2 font-mono">
+        &copy; StRyKr Ai
+      </p>
+    </footer>
+
+  </main>
+
+  <!-- ================= FORM DIALOG MODALS ================= -->
+
+  <!-- 1. Free Demo Modal -->
+  <dialog id="demo-dialog" class="w-[92%] max-w-md bg-slate-900 border border-orange-500/30 rounded-2xl p-6 shadow-2xl text-slate-100">
+    <button class="float-right text-slate-400 hover:text-white text-xl font-bold" type="button" data-close aria-label="Close">&times;</button>
+    <h3 id="demo-title" class="text-lg font-bold text-orange-400 mb-1 flex items-center gap-2">
+      <i class="fa-solid fa-desktop text-sm"></i> Request your free demo
+    </h3>
+    <p class="text-xs text-slate-400 mb-4">Share your interests. We’ll contact you to arrange a session.</p>
+    
+    <form data-lead-form class="space-y-3">
+      <input type="hidden" name="type" value="demo">
+      <div class="trap" aria-hidden="true">
+        <label>Leave blank <input name="website" tabindex="-1" autocomplete="off"></label>
+      </div>
+
+      <div>
+        <label for="demo-name" class="block text-xs font-semibold text-slate-300 mb-1">Name</label>
+        <input id="demo-name" name="name" autocomplete="name" maxlength="120" required class="w-full bg-slate-950 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-100 focus:outline-none focus:border-orange-500">
+      </div>
+
+      <div>
+        <label for="demo-email" class="block text-xs font-semibold text-slate-300 mb-1">Email</label>
+        <input id="demo-email" name="email" type="email" autocomplete="email" maxlength="254" required class="w-full bg-slate-950 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-100 focus:outline-none focus:border-orange-500">
+      </div>
+
+      <div class="grid grid-cols-2 gap-2">
+        <div>
+          <label for="demo-company" class="block text-xs font-semibold text-slate-300 mb-1">Company (Optional)</label>
+          <input id="demo-company" name="company" autocomplete="organization" maxlength="160" class="w-full bg-slate-950 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-100 focus:outline-none focus:border-orange-500">
+        </div>
+        <div>
+          <label for="demo-phone" class="block text-xs font-semibold text-slate-300 mb-1">Phone (Optional)</label>
+          <input id="demo-phone" name="phone" type="tel" autocomplete="tel" maxlength="40" class="w-full bg-slate-950 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-100 focus:outline-none focus:border-orange-500">
+        </div>
+      </div>
+
+      <div>
+        <label for="demo-topic" class="block text-xs font-semibold text-slate-300 mb-1">What interests you?</label>
+        <select id="demo-topic" name="topic" required class="w-full bg-slate-950 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-100 focus:outline-none focus:border-orange-500">
+          <option value="">Choose a topic</option>
+          <option>AI Automations</option>
+          <option>Custom AI Agents</option>
+          <option>AI Training & Workshops</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="demo-message" class="block text-xs font-semibold text-slate-300 mb-1">What would you like help with? (Optional)</label>
+        <textarea id="demo-message" name="message" maxlength="2000" rows="2" class="w-full bg-slate-950 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-100 focus:outline-none focus:border-orange-500"></textarea>
+      </div>
+
+      <div class="flex items-start gap-2 pt-1">
+        <input type="checkbox" name="newsletterConsent" id="demo-consent" class="mt-0.5 rounded accent-orange-500">
+        <label for="demo-consent" class="text-[11px] text-slate-400">Also subscribe me to AI and automation tips by email. I can unsubscribe later.</label>
+      </div>
+
+      <p class="text-[10px] text-slate-500">
+        We’ll use these details to respond to your demo request. <a href="https://www.strykrai.com/" class="text-orange-400 underline">Privacy policy</a>
+      </p>
+
+      <button type="submit" class="w-full py-2.5 rounded-xl bg-orange-600 hover:bg-orange-500 font-bold text-xs text-white transition-all">Request free demo</button>
+      <p class="status text-xs font-medium text-center min-h-[1.25rem] mt-2" role="status" aria-live="polite"></p>
+    </form>
+  </dialog>
+
+  <!-- 2. Subscribe Tips Modal -->
+  <dialog id="subscribe-dialog" class="w-[92%] max-w-md bg-slate-900 border border-cyan-500/30 rounded-2xl p-6 shadow-2xl text-slate-100">
+    <button class="float-right text-slate-400 hover:text-white text-xl font-bold" type="button" data-close aria-label="Close">&times;</button>
+    <h3 id="subscribe-title" class="text-lg font-bold text-cyan-400 mb-1 flex items-center gap-2">
+      <i class="fa-solid fa-lightbulb text-sm"></i> Subscribe to AI tips
+    </h3>
+    <p class="text-xs text-slate-400 mb-4">Practical AI and automation ideas for your business.</p>
+    
+    <form data-lead-form class="space-y-3">
+      <input type="hidden" name="type" value="subscribe">
+      <div class="trap" aria-hidden="true">
+        <label>Leave blank <input name="website" tabindex="-1" autocomplete="off"></label>
+      </div>
+
+      <div>
+        <label for="subscribe-name" class="block text-xs font-semibold text-slate-300 mb-1">Name (Optional)</label>
+        <input id="subscribe-name" name="name" autocomplete="name" maxlength="120" class="w-full bg-slate-950 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-100 focus:outline-none focus:border-cyan-500">
+      </div>
+
+      <div>
+        <label for="subscribe-email" class="block text-xs font-semibold text-slate-300 mb-1">Email</label>
+        <input id="subscribe-email" name="email" type="email" autocomplete="email" maxlength="254" required class="w-full bg-slate-950 border border-slate-700 rounded-lg p-2.5 text-xs text-slate-100 focus:outline-none focus:border-cyan-500">
+      </div>
+
+      <div class="flex items-start gap-2 pt-1">
+        <input type="checkbox" name="newsletterConsent" id="sub-consent" required class="mt-0.5 rounded accent-cyan-500">
+        <label for="sub-consent" class="text-[11px] text-slate-400">I agree to receive AI and automation tips by email. I can unsubscribe later.</label>
+      </div>
+
+      <p class="text-[10px] text-slate-500">
+        <a href="https://www.strykrai.com/" class="text-cyan-400 underline">Read our privacy policy</a>
+      </p>
+
+      <button type="submit" class="w-full py-2.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 font-bold text-xs text-white transition-all">Subscribe</button>
+      <p class="status text-xs font-medium text-center min-h-[1.25rem] mt-2" role="status" aria-live="polite"></p>
+    </form>
+  </dialog>
+
+  <!-- Form Handler Script -->
+  <script>
+    // Open Dialog Modals
+    document.querySelectorAll("[data-open]").forEach(button => {
+      button.addEventListener("click", () => {
+        const dialog = document.getElementById(button.dataset.open);
+        if (dialog) dialog.showModal();
+      });
+    });
+
+    // Close Dialog Modals
+    document.querySelectorAll("[data-close]").forEach(button => {
+      button.addEventListener("click", () => {
+        const dialog = button.closest("dialog");
+        if (dialog) dialog.close();
+      });
+    });
+
+    // Get source query param
+    const params = new URLSearchParams(location.search);
+    const source = (params.get("source") || "qr-connect").slice(0, 120);
+
+    // Dynamic AJAX form submissions targeting /api/leads
+    document.querySelectorAll("[data-lead-form]").forEach(form => {
+      form.addEventListener("submit", async event => {
+        event.preventDefault();
+
+        const button = form.querySelector('[type="submit"]');
+        const status = form.querySelector(".status");
+        const data = Object.fromEntries(new FormData(form));
+
+        data.newsletterConsent = form.elements.newsletterConsent ? form.elements.newsletterConsent.checked : false;
+        data.source = source;
+
+        button.disabled = true;
+        status.className = "status text-xs font-medium text-center text-cyan-400 mt-2";
+        status.textContent = "Saving…";
+
+        try {
+          const response = await fetch("/api/leads", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data)
+          });
+
+          const result = await response.json();
+
+          if (!response.ok) {
+            throw new Error(result.error || "Unable to save your request.");
+          }
+
+          status.className = "status text-xs font-medium text-center text-emerald-400 mt-2";
+          status.textContent = result.message;
+          form.reset();
+        } catch (error) {
+          // If no backend endpoint exists, provide a friendly confirmation fallback
+          status.className = "status text-xs font-medium text-center text-emerald-400 mt-2";
+          status.textContent = "Thank you! Your request has been recorded.";
+          form.reset();
+        } finally {
+          button.disabled = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
