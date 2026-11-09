@@ -5,7 +5,7 @@ const READINESS_REGISTER = [
   { item: 'Offering documents and disclosure package', owner: 'Securities counsel', status: 'Not started' },
   { item: 'Immigration eligibility and filing strategy', owner: 'Immigration counsel', status: 'In review' },
   { item: 'Construction and site readiness evidence', owner: 'Project sponsor', status: 'Complete' },
-  { item: 'Public claim and marketing review', owner: 'Summit coordination', status: 'Blocked — pending counsel' },
+  { item: 'Public claim and marketing review', owner: 'StRyKr Ai coordination', status: 'Blocked — pending counsel' },
 ]
 
 const STATUS_STYLES = {
@@ -33,7 +33,7 @@ export default function WorkforcePage({ onNavigate }) {
                 Build the capacity required to grow responsibly.
               </h1>
               <p className="text-slate-300 text-base font-light mt-6 leading-relaxed max-w-xl">
-                Summit coordinates employer demand, workforce forecasting, credentialing, candidate pathways, project readiness, disclosure, and the independent professionals required for regulated processes.
+                StRyKr Ai coordinates employer demand, workforce forecasting, credentialing, candidate pathways, project readiness, disclosure, and the independent professionals required for regulated processes.
               </p>
               <div className="flex flex-wrap items-center gap-4 mt-8">
                 <button
@@ -77,7 +77,7 @@ export default function WorkforcePage({ onNavigate }) {
                 A reliable view of demand, pipeline, and risk.
               </h3>
               <p className="text-sm text-slate-300 font-light leading-relaxed mb-6">
-                Employers rarely hold one picture of role-and-site demand, credential milestones, onboarding status, and retention risk. Summit builds it, then keeps it operating.
+                Employers rarely hold one picture of role-and-site demand, credential milestones, onboarding status, and retention risk. StRyKr Ai builds it, then keeps it operating.
               </p>
               <ul className="space-y-2.5">
                 {[
@@ -102,7 +102,7 @@ export default function WorkforcePage({ onNavigate }) {
                 Documentation, disclosure, and defined professional roles.
               </h3>
               <p className="text-sm text-slate-300 font-light leading-relaxed mb-6">
-                Project information, professional responsibilities, and publication controls are usually fragmented across parties. Summit coordinates readiness — it does not replace licensed counsel.
+                Project information, professional responsibilities, and publication controls are usually fragmented across parties. StRyKr Ai coordinates readiness — it does not replace licensed counsel.
               </p>
               <ul className="space-y-2.5">
                 {[
@@ -171,7 +171,7 @@ export default function WorkforcePage({ onNavigate }) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="glass-card p-6 sm:p-8 border border-white/10">
               <div className="text-[11px] font-mono tracking-widest uppercase text-slate-500 mb-4">
-                External market evidence — not Summit results
+                External market evidence — not StRyKr Ai results
               </div>
               <div className="text-4xl sm:text-5xl font-normal text-white font-serif mb-2">1.9M</div>
               <p className="text-sm text-slate-300 font-light leading-relaxed">
@@ -187,10 +187,10 @@ export default function WorkforcePage({ onNavigate }) {
                 Boundary note
               </div>
               <p className="text-sm text-slate-300 font-light leading-relaxed">
-                Summit provides information, readiness, operational coordination, and documentation standards. Legal, immigration, securities, licensure, and investment determinations remain with the appropriate licensed professionals and government agencies. USCIS administers the EB-5 program and determines immigration eligibility and adjudication.
+                StRyKr Ai provides information, readiness, operational coordination, and documentation standards. Legal, immigration, securities, licensure, and investment determinations remain with the appropriate licensed professionals and government agencies. USCIS administers the EB-5 program and determines immigration eligibility and adjudication.
               </p>
               <p className="text-xs text-slate-400 font-light mt-4">
-                Summit does not guarantee immigration outcomes, visa availability, or investment returns.
+                StRyKr Ai does not guarantee immigration outcomes, visa availability, or investment returns.
               </p>
             </div>
           </div>

@@ -14,7 +14,7 @@ export function CTASection({ onNavigate }) {
           </h2>
 
           <p className="text-slate-300 text-base sm:text-lg font-light max-w-2xl mx-auto mb-10 leading-relaxed">
-            A 30-minute demo and problem-definition conversation. We determine the problem, owner, urgency, and whether Summit is the right firm — before proposing anything.
+            A 30-minute demo and problem-definition conversation. We determine the problem, owner, urgency, and whether StRyKr Ai is the right firm — before proposing anything.
           </p>
 
           {/* Action Buttons */}

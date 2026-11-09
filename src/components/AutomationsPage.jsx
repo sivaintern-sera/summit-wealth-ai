@@ -65,7 +65,7 @@ export default function AutomationsPage({ onNavigate }) {
                 Automate the work that quietly costs you the most.
               </h1>
               <p className="text-slate-300 text-base font-light mt-6 leading-relaxed max-w-xl">
-                Summit finds the repetitive operational work draining hours from your team — then builds automations with permissions, business rules, review gates, monitoring, and rollback, measured against a baseline agreed before a line of code is written.
+                StRyKr Ai finds the repetitive operational work draining hours from your team — then builds automations with permissions, business rules, review gates, monitoring, and rollback, measured against a baseline agreed before a line of code is written.
               </p>
               <div className="flex flex-wrap items-center gap-4 mt-8">
                 <button
@@ -119,7 +119,7 @@ export default function AutomationsPage({ onNavigate }) {
 
             <div className="glass-card border border-[#2FC4B7]/30 p-6 text-center">
               <div className="text-[11px] font-mono tracking-widest uppercase text-[#2FC4B7] mb-4">
-                Summit Operating Layer
+                StRyKr Ai Operating Layer
               </div>
               <div className="flex flex-wrap justify-center gap-2 mb-4">
                 {OPERATING_LAYER.map((s) => (

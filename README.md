@@ -1,8 +1,8 @@
-# Summit Wealth AI — The $15 Trillion AI Economic Shift
+# StRyKr Ai — The $15 Trillion AI Economic Shift
 
 🌐 **Live Site**: [www.strykrai.com](https://www.strykrai.com)
 
-> A high-impact, data-driven platform exploring the $15 Trillion AI economic transformation — built for Summit Wealth's institutional intelligence initiative.
+> A high-impact, data-driven platform exploring the $15 Trillion AI economic transformation — built for StRyKr Ai's institutional intelligence initiative.
 
 ---
 
@@ -14,11 +14,11 @@
 
 ## 📌 About
 
-**Summit Wealth AI** is a modern web platform presenting institutional-grade insights on the AI-driven economic shift. It covers:
+**StRyKr Ai** is a modern web platform presenting institutional-grade insights on the AI-driven economic shift. It covers:
 
 - 📊 **$15 Trillion AI Economic Opportunity** — Sector-by-sector breakdown
 - 🏭 **Industry Problems** — Challenges AI is solving across verticals
-- 💡 **Solutions** — How Summit Wealth addresses them
+- 💡 **Solutions** — How StRyKr Ai addresses them
 - 📈 **Vertical CAGR Analysis** — Growth rate projections
 - 🛣️ **Implementation Strategy** — A roadmap for AI adoption
 - 💰 **Spending Trajectory** — Government & enterprise AI investment trends
@@ -92,4 +92,4 @@ To deploy updates, push to the `master` branch and Vercel will auto-deploy.
 
 ## 📄 License
 
-© 2026 Summit Wealth. All rights reserved.
+© 2026 StRyKr Ai. All rights reserved.

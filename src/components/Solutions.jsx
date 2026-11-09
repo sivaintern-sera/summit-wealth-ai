@@ -55,7 +55,7 @@ export default function Solutions() {
         {/* Section Header */}
         <div className="mb-14">
           <h2 className="text-4xl sm:text-5xl font-normal text-white tracking-tight">
-            Summit's Solutions
+            StRyKr Ai's Solutions
           </h2>
           <p className="text-slate-400 text-base mt-2 font-light">
             Built per sector, scoped to one measurable constraint, and governed before launch.
