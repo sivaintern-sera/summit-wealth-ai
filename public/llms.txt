@@ -1,0 +1,119 @@
+# StRyKr Ai
+
+> Applied intelligence firm removing the operational constraints that block growth — broken workflows, preventable revenue loss, and shortages of workforce capacity — with measurable, governed AI systems.
+
+## Company
+
+- Name: StRyKr Ai
+- Website: https://www.strykrai.com
+- Contact: https://www.strykrai.com (Contact page)
+- Sister site: https://www.stemedai.com (STEM education AI)
+
+## What We Do
+
+StRyKr Ai builds measurable systems that address:
+- Broken workflows costing hours
+- Preventable revenue leakage
+- Workforce capacity shortages
+
+Every engagement follows: Discover → Design → Deploy → Measure.
+A decision gate at every stage — scale, revise, or stop.
+
+## Service Areas
+
+### 1. AI Automations & Custom Agents
+- Intake & re-keying automation
+- Classification & routing
+- Follow-up & escalation (revenue leakage detection)
+- Custom AI agents on approved knowledge only
+- Governance: permissions, business rules, review gates, monitoring, rollback
+- Aligned to NIST AI Risk Management Framework
+
+### 2. AI for Education (K-12 & Higher Ed)
+- AI literacy and safe-use training for teachers, administrators, principals, counselors, IT, and faculty
+- AI policy development and rollout
+- Role-specific workshops with guardrails
+- AI governance readiness assessments
+- Department-specific playbooks
+- Federal/state grant tracking
+- Higher ed: dropout detection, AI advising, workforce readiness
+
+### 3. Workforce & EB-5 Project Readiness
+- Healthcare workforce demand forecasting
+- Credentialing operating models
+- Ethical recruitment standards
+- EB-5 project readiness coordination (documentation, disclosure, professional roles)
+- Boundary: legal, immigration, securities determinations remain with licensed professionals
+
+### 4. Revenue Intelligence
+- Revenue leakage quantification
+- Controls design and finance validation
+
+## Solutions by Sector
+
+### K-12 Education
+- AI literacy and safe-use training
+- AI workload reduction workshops
+- AI procurement and vendor review
+- Department-specific playbooks
+- Predictive intelligence command center
+- AI policy development and rollout support
+- Federal and state grant tracker with alerts
+
+### Higher Education
+- AI leadership command center
+- Dropout detector
+- AI advisor
+- Workforce readiness meter
+
+### Small Businesses
+- Support ticket volume and first-contact resolution
+- Cross-platform data drift and manual orchestration
+- Supply chain exceptions and predictive intelligence
+- Revenue leakage detection, mitigation, and agents
+
+### Professionals
+- Travel planning and multi-step booking agent
+- Personal finance, subscriptions, and expense agent
+- Email triage, calendar, and scheduling agent
+- Autonomous e-commerce, deal finding, and returns agent
+- Health, wellness, and daily life admin agent
+
+## Principles
+
+1. Business case before build
+2. Production over presentation
+3. Human authority stays visible
+4. Designed for existing operations
+5. Evidence before expansion
+
+## Market Context
+
+- $15 trillion AI economic shift by 2030
+- AI projected to contribute 14% to global GDP by 2030
+- $2,840B annual global AI software target by 2030
+- 12x energy-to-inference compute efficiency gain
+- 15.4B active IoT AI edge nodes by 2030
+- 8.2x average ROI in mature sectors by 2030
+
+## Team Structure
+
+- Principal — Applied AI: workflow diagnosis, solution architecture, deployment governance
+- Principal — Revenue Intelligence: leakage quantification, controls design, finance validation
+- Practice Lead — Workforce: demand forecasting, credentialing operations, employer coordination
+- Named collaborators: legal, immigration, securities, or clinical specialists, engaged per scope
+
+## Evidence Standard
+
+Every published outcome includes:
+- Baseline: what was happening before intervention
+- Scope: the workflow, site, population, or period measured
+- Result: the observed change, including unfavorable findings
+- Source: the system or institution the measure came from
+- Validation: the client owner or independent party that reviewed it
+- Limits: what the result does not establish
+
+## Detailed Content
+
+For complete, agent-readable content see: https://www.strykrai.com/llms-full.txt
+

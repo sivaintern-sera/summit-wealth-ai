@@ -1,0 +1,11 @@
+# StRyKr Ai — www.strykrai.com
+# Welcome, crawlers and AI agents.
+
+User-agent: *
+Allow: /
+
+# AI Agent Discovery
+# See /llms.txt and /llms-full.txt for structured, agent-readable content.
+
+Sitemap: https://www.strykrai.com/sitemap.xml
+
